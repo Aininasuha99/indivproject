@@ -1,0 +1,80 @@
+
+body {
+	
+}
+
+/* Style the tab */
+.tab {
+  position:absolute;
+  overflow: hidden;
+  background-color: black;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  position:relative;
+  left:55%;
+  background-color: inherit;
+  float:left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: orange;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+ animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+}
+
+@-webkit-keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+/* Style the tab content */
+.tabcontent {
+	position:relative;
+	top:37px;
+  display: none;
+  width:100%;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.text {
+  color:white;
+}
